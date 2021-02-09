@@ -1,9 +1,9 @@
 import java.util.ArrayList;
-import java.util.HashMap;
+//import java.util.HashMap;
 
 public class Library {
-    private ArrayList<Book> books;
     private int stockCapacity;
+    private ArrayList<Book> books;
 //    private HashMap<String, String>
 
 
