@@ -11,4 +11,9 @@ public class Library {
         this.stockCapacity = stockCapacity;
         this.books = new ArrayList<>();
     }
+
+    public int countStock() {
+        return this.books.size();
+    }
+
 }
