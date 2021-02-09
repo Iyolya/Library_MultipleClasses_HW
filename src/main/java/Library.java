@@ -1,15 +1,22 @@
 import java.util.ArrayList;
-//import java.util.HashMap;
+import java.util.HashMap;
+
 
 public class Library {
     private int stockCapacity;
     private ArrayList<Book> books;
-//    private HashMap<String, String>
+    private HashMap<String, Integer> stockByGenre;
+    //using int instead of the wrapper-class Integer allows us
+    //to use methods related to Integer. We want to treat int
+    //as any other object si it has "nullability" and Integer
+    // makes it possible. Wrapper classes inherit from
+    // Object classes unlike primitives.
 
 
     public Library(int stockCapacity){
         this.stockCapacity = stockCapacity;
         this.books = new ArrayList<>();
+        this.stockByGenre = new HashMap<>();
     }
 
     public int countStock() {
