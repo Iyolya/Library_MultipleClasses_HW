@@ -21,4 +21,9 @@ public class BookTest {
     public void hasAuthor(){
         assertEquals("Carl Gustav Jung", book.getAuthor());
     }
+
+    @Test
+    public void hasGenre(){
+        assertEquals("Biography", book.getGenre());
+    }
 }
